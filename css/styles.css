@@ -278,6 +278,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio__list li {
