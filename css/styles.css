@@ -1,0 +1,291 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+
+  --primary-brand-color: #4d5ae5;
+  --primary-state-color: #404bbf;
+
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+
+  --grey-color: #6d6d7b;
+
+  --white-color: #ffffff;
+  --dairy-color: #fcfcfc;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+p {
+}
+
+img {
+}
+
+.container {
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.medium-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+}
+
+.logo {
+  color: var(--dark-color);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.logo span {
+  color: var(--dark-color);
+}
+
+.header {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__nav {
+}
+
+.header__list {
+}
+
+.header__nav-link {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  color: var(--primary-state-color);
+}
+
+.header__address {
+  margin-left: auto;
+  font-style: normal;
+}
+
+.header__address--link {
+  color: var(--text-color);
+}
+
+.header__address--link:hover,
+.header__address--link:focus {
+  color: var(--primary-state-color);
+}
+
+.hero-section {
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.hero-section__title {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.goals-section__list li {
+}
+
+.goals-section__list li:not(:first-child) {
+  margin-left: 24px;
+}
+
+.goals-section__title {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+}
+
+.goals-section__text {
+  text-wrap: balance;
+}
+
+.team-section {
+  padding-top: 120px;
+  background-color: var(--light-color);
+}
+
+.team-section .container {
+  padding-top: 0;
+}
+
+.team-title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.team-list {
+}
+
+.team__item {
+  overflow: hidden;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.team__title {
+  padding-top: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  padding-bottom: 32px;
+}
+
+.portfolio-title {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 72px;
+}
+
+.portfolio__list {
+}
+
+.portfolio__item {
+}
+
+.portfolio__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-top: 32px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+  color: var(--dark-color);
+}
+
+.portfolio__text {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-right: 156px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.footer .logo {
+  margin-bottom: 16px;
+}
+
+.footer .logo span {
+  color: var(--light-color);
+}
+
+.footer__text {
+  color: var(--light-color);
+  line-height: 1.5;
+}
