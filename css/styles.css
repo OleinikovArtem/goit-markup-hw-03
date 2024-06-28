@@ -85,6 +85,19 @@ img {
   width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -154,11 +167,14 @@ img {
 }
 
 .header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .header .logo {
@@ -217,7 +233,7 @@ img {
   gap: 24px;
 }
 
-.goals-section__list li {
+.goals-section__item {
   width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -232,12 +248,13 @@ img {
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .team__item {
   overflow: hidden;
   background-color: var(--white-color);
-  border-radius: 5px;
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
   width: calc((100% - 3 * 24px) / 4);
   box-shadow: 0 4px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
@@ -248,7 +265,7 @@ img {
 }
 
 .team__desc {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team__text {
@@ -260,7 +277,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio__list li {
