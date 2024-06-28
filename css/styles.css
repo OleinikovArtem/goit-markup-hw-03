@@ -20,6 +20,11 @@
   --dairy-color: #fcfcfc;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--white-color);
@@ -63,13 +68,17 @@ button {
   border: none;
 }
 
-p {
-}
-
 img {
+  display: block;
 }
 
 .container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .small-text {
@@ -90,6 +99,9 @@ img {
   line-height: 24px;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   color: var(--white-color);
   background-color: var(--primary-brand-color);
@@ -109,6 +121,7 @@ img {
 }
 
 .logo {
+  display: block;
   color: var(--dark-color);
   font-family: var(--title-font);
   font-weight: 700;
@@ -124,16 +137,24 @@ img {
 }
 
 .header {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header .logo {
+  margin-right: 76px;
 }
 
 .header__nav {
+  display: flex;
 }
 
 .header__list {
+  display: flex;
+  gap: 40px;
 }
 
 .header__nav-link {
@@ -162,8 +183,6 @@ img {
 
 .hero-section {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: var(--dark-color);
   color: var(--white-color);
 }
@@ -173,13 +192,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
-.goals-section__list li {
-}
-
-.goals-section__list li:not(:first-child) {
-  margin-left: 24px;
+.goals-section__list {
+  display: flex;
+  gap: 24px;
 }
 
 .goals-section__title {
@@ -194,12 +212,7 @@ img {
 }
 
 .team-section {
-  padding-top: 120px;
   background-color: var(--light-color);
-}
-
-.team-section .container {
-  padding-top: 0;
 }
 
 .team-title {
@@ -207,15 +220,24 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team__item {
   overflow: hidden;
   background-color: var(--white-color);
+  border-radius: 5px;
   text-align: center;
+  box-shadow: 0px 4px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team_img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team__title {
@@ -246,33 +268,25 @@ img {
 }
 
 .portfolio__list {
-}
-
-.portfolio__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .portfolio__title {
-  margin-top: 0;
   margin-bottom: 8px;
-  padding-top: 32px;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 16px;
   color: var(--dark-color);
 }
 
-.portfolio__text {
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 32px;
-  padding-left: 16px;
+.portfolio__desc {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 .footer {
-  padding-top: 100px;
-  padding-right: 156px;
-  padding-bottom: 100px;
-  padding-left: 156px;
+  padding: 100px 0;
   background-color: var(--dark-color);
   color: var(--light-color);
 }
@@ -288,4 +302,5 @@ img {
 .footer__text {
   color: var(--light-color);
   line-height: 1.5;
+  max-width: 264px;
 }
